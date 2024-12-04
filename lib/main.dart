@@ -1,25 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_dev_test/login/login_module.dart';
 
 void main() {
-  runApp(const MyApp());
-}
-
-class MyApp extends StatelessWidget {
-  const MyApp({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'Dev Flutter Test',
-      theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
-        useMaterial3: true,
-      ),
-      home: const Scaffold(
-        body: Center(
-          child: Text('good luck =]'),
-        ),
-      ),
-    );
-  }
+  runApp(const MaterialApp(
+    home: LoginModule(),
+  ));
 }
